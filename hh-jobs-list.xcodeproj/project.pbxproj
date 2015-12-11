@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		214B0E931C1AA6D0001457C1 /* Vacancy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214B0E921C1AA6D0001457C1 /* Vacancy.swift */; };
+		214B0E951C1AA78E001457C1 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214B0E941C1AA78E001457C1 /* Company.swift */; };
+		214B0E981C1AA8F5001457C1 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214B0E971C1AA8F5001457C1 /* DataManager.swift */; };
+		214B0E9B1C1AB38F001457C1 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214B0E9A1C1AB38F001457C1 /* Logger.swift */; };
+		21B4E8BF1C1AC80400F78333 /* VacancyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4E8BE1C1AC80400F78333 /* VacancyManager.swift */; };
+		21B4E8C11C1AC80F00F78333 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4E8C01C1AC80F00F78333 /* Protocols.swift */; };
+		21B4E8C31C1ACBE800F78333 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4E8C21C1ACBE800F78333 /* Extensions.swift */; };
+		21B4E8C51C1AD38500F78333 /* CompanyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4E8C41C1AD38500F78333 /* CompanyManager.swift */; };
+		21B4E8C71C1AD5D000F78333 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4E8C61C1AD5D000F78333 /* NetworkManager.swift */; };
+		21B4E8CA1C1AD85F00F78333 /* NetworkProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4E8C91C1AD85F00F78333 /* NetworkProtocols.swift */; };
+		21B4E8CC1C1AD89400F78333 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4E8CB1C1AD89400F78333 /* Content.swift */; };
+		21B4E8CE1C1AD8C300F78333 /* NetworkState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4E8CD1C1AD8C300F78333 /* NetworkState.swift */; };
+		21B4E8D01C1AD9E400F78333 /* VacanciesNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B4E8CF1C1AD9E400F78333 /* VacanciesNetworkManager.swift */; };
 		21BA2D481C1A9D5700438B05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BA2D471C1A9D5700438B05 /* AppDelegate.swift */; };
 		21BA2D4A1C1A9D5700438B05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BA2D491C1A9D5700438B05 /* ViewController.swift */; };
 		21BA2D4D1C1A9D5700438B05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BA2D4B1C1A9D5700438B05 /* Main.storyboard */; };
@@ -17,6 +30,19 @@
 
 /* Begin PBXFileReference section */
 		0555CE591F8977FFAFCA4DA0 /* Pods-hh-jobs-list.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hh-jobs-list.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hh-jobs-list/Pods-hh-jobs-list.debug.xcconfig"; sourceTree = "<group>"; };
+		214B0E921C1AA6D0001457C1 /* Vacancy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vacancy.swift; sourceTree = "<group>"; };
+		214B0E941C1AA78E001457C1 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		214B0E971C1AA8F5001457C1 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		214B0E9A1C1AB38F001457C1 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		21B4E8BE1C1AC80400F78333 /* VacancyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacancyManager.swift; sourceTree = "<group>"; };
+		21B4E8C01C1AC80F00F78333 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		21B4E8C21C1ACBE800F78333 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		21B4E8C41C1AD38500F78333 /* CompanyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyManager.swift; sourceTree = "<group>"; };
+		21B4E8C61C1AD5D000F78333 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		21B4E8C91C1AD85F00F78333 /* NetworkProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProtocols.swift; sourceTree = "<group>"; };
+		21B4E8CB1C1AD89400F78333 /* Content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		21B4E8CD1C1AD8C300F78333 /* NetworkState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkState.swift; sourceTree = "<group>"; };
+		21B4E8CF1C1AD9E400F78333 /* VacanciesNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacanciesNetworkManager.swift; sourceTree = "<group>"; };
 		21BA2D441C1A9D5700438B05 /* hh-jobs-list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hh-jobs-list.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21BA2D471C1A9D5700438B05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21BA2D491C1A9D5700438B05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +66,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		214B0E961C1AA8C3001457C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				214B0E921C1AA6D0001457C1 /* Vacancy.swift */,
+				214B0E941C1AA78E001457C1 /* Company.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		214B0E991C1AB2CA001457C1 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				214B0E971C1AA8F5001457C1 /* DataManager.swift */,
+				21B4E8BE1C1AC80400F78333 /* VacancyManager.swift */,
+				21B4E8C41C1AD38500F78333 /* CompanyManager.swift */,
+			);
+			name = DataLayer;
+			sourceTree = "<group>";
+		};
+		21B4E8BB1C1AC53800F78333 /* SupportClasses */ = {
+			isa = PBXGroup;
+			children = (
+				21B4E8C01C1AC80F00F78333 /* Protocols.swift */,
+				214B0E9A1C1AB38F001457C1 /* Logger.swift */,
+				21B4E8C21C1ACBE800F78333 /* Extensions.swift */,
+			);
+			name = SupportClasses;
+			sourceTree = "<group>";
+		};
+		21B4E8BC1C1AC55200F78333 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				21BA2D4E1C1A9D5700438B05 /* Assets.xcassets */,
+				21BA2D531C1A9D5700438B05 /* Info.plist */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		21B4E8BD1C1AC56B00F78333 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				21BA2D4B1C1A9D5700438B05 /* Main.storyboard */,
+				21BA2D501C1A9D5700438B05 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		21B4E8C81C1AD82200F78333 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				21B4E8C61C1AD5D000F78333 /* NetworkManager.swift */,
+				21B4E8CF1C1AD9E400F78333 /* VacanciesNetworkManager.swift */,
+				21B4E8C91C1AD85F00F78333 /* NetworkProtocols.swift */,
+				21B4E8CB1C1AD89400F78333 /* Content.swift */,
+				21B4E8CD1C1AD8C300F78333 /* NetworkState.swift */,
+			);
+			name = NetworkLayer;
+			sourceTree = "<group>";
+		};
 		21BA2D3B1C1A9D5700438B05 = {
 			isa = PBXGroup;
 			children = (
@@ -62,11 +147,13 @@
 			isa = PBXGroup;
 			children = (
 				21BA2D471C1A9D5700438B05 /* AppDelegate.swift */,
+				21B4E8BB1C1AC53800F78333 /* SupportClasses */,
 				21BA2D491C1A9D5700438B05 /* ViewController.swift */,
-				21BA2D4B1C1A9D5700438B05 /* Main.storyboard */,
-				21BA2D4E1C1A9D5700438B05 /* Assets.xcassets */,
-				21BA2D501C1A9D5700438B05 /* LaunchScreen.storyboard */,
-				21BA2D531C1A9D5700438B05 /* Info.plist */,
+				21B4E8C81C1AD82200F78333 /* NetworkLayer */,
+				21B4E8BD1C1AC56B00F78333 /* Storyboards */,
+				21B4E8BC1C1AC55200F78333 /* Support */,
+				214B0E991C1AB2CA001457C1 /* DataLayer */,
+				214B0E961C1AA8C3001457C1 /* Model */,
 			);
 			path = "hh-jobs-list";
 			sourceTree = "<group>";
@@ -119,7 +206,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = "Дмитрий";
+				ORGANIZATIONNAME = geans.ru;
 				TargetAttributes = {
 					21BA2D431C1A9D5700438B05 = {
 						CreatedOnToolsVersion = 7.2;
@@ -210,8 +297,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21B4E8CE1C1AD8C300F78333 /* NetworkState.swift in Sources */,
+				21B4E8CA1C1AD85F00F78333 /* NetworkProtocols.swift in Sources */,
 				21BA2D4A1C1A9D5700438B05 /* ViewController.swift in Sources */,
+				21B4E8C31C1ACBE800F78333 /* Extensions.swift in Sources */,
+				21B4E8D01C1AD9E400F78333 /* VacanciesNetworkManager.swift in Sources */,
+				214B0E9B1C1AB38F001457C1 /* Logger.swift in Sources */,
+				214B0E981C1AA8F5001457C1 /* DataManager.swift in Sources */,
+				21B4E8C71C1AD5D000F78333 /* NetworkManager.swift in Sources */,
+				21B4E8BF1C1AC80400F78333 /* VacancyManager.swift in Sources */,
+				21B4E8CC1C1AD89400F78333 /* Content.swift in Sources */,
 				21BA2D481C1A9D5700438B05 /* AppDelegate.swift in Sources */,
+				214B0E931C1AA6D0001457C1 /* Vacancy.swift in Sources */,
+				214B0E951C1AA78E001457C1 /* Company.swift in Sources */,
+				21B4E8C11C1AC80F00F78333 /* Protocols.swift in Sources */,
+				21B4E8C51C1AD38500F78333 /* CompanyManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "hh-jobs-list/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.geans.ios.hh-jobs-list";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -338,6 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "hh-jobs-list/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.geans.ios.hh-jobs-list";
 				PRODUCT_NAME = "$(TARGET_NAME)";
