@@ -1,5 +1,5 @@
 //
-//  Logger.swift
+//  Log.swift
 //  hh-jobs-list
 //
 //  Created by Дмитрий on 11.12.15.
