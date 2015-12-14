@@ -15,7 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        // MARK: Dependency injection
+        let completion: ([AnyObject]) -> () = { (result: [AnyObject]) in
+            let controller = self.window?.rootViewController as! ViewController
+            controller.records = result as! [Vacancy]
+        }
+        let entity = Entity(closure: completion, contentType: ContentType.Vacancies)
+        entity.refresh()
         return true
     }
 

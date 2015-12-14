@@ -33,10 +33,11 @@ class VacanciesParser: Parserable {
     class func parse(parser: Parser) -> [Vacancy] {
         var list: [Vacancy] = []
         let data = JSON(data: parser.object.data!)
-        let items = data["cities"]
+        let items = data["items"]
         for i in 0..<items.count {
             list.append( VacanciesParser.parseEntity(items, i: i) )
         }
+        Log.i(items.count.description)
         return list
     }
 

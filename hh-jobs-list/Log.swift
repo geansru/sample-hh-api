@@ -10,7 +10,7 @@ import Foundation
 
 
 class Log {
-    static let LOG_LEVEL = Log.Level.Debug
+    static let LOG_LEVEL = Log.Level.Info   
     
     enum Level: Int { case All=0,Info,Debug,Error,None=999 }
     
