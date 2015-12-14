@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import SwiftyJSON
 
 class Parser {
     private let queueName = "ru.geans.ios.Parser.bgqueue"

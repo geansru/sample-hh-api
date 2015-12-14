@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 protocol ParserDelegate {
     func parserDidReceiveError(parser: Parser, error: String)
