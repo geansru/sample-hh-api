@@ -11,7 +11,7 @@ import UIKit
 class VacancyCell: UITableViewCell {
     
     // MARK: @IBOutlets
-    @IBOutlet weak var logoImage: UIImageView!
+    @IBOutlet weak var companyLogoImage: UIImageView!
     @IBOutlet weak var salaryLabel: UILabel!
     @IBOutlet weak var companyLabel: UILabel!
     @IBOutlet weak var vacancyNameLabel: UILabel!
@@ -22,7 +22,7 @@ class VacancyCell: UITableViewCell {
             updateTextOnLabel((vacancy?.salary)!, label: salaryLabel)
             updateTextOnLabel((vacancy?.company?.companyName)!, label: companyLabel)
             updateTextOnLabel((vacancy?.vacancyName)!, label: vacancyNameLabel)
-            logoImage.loadImageWithURL(NSURL(string: vacancy!.company!.companyLogoURL)!)
+            companyLogoImage.loadImageWithURL(NSURL(string: vacancy!.company!.companyLogoURL)!)
         }
     }
 

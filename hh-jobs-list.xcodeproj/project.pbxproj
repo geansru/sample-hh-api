@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		211CF2D91C1EF0180035F199 /* VacancyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211CF2D81C1EF0180035F199 /* VacancyCell.swift */; };
 		211CF2DB1C1EF1B40035F199 /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211CF2DA1C1EF1B40035F199 /* UIImageView+DownloadImage.swift */; };
+		211CF2DD1C1F05590035F199 /* CompanyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211CF2DC1C1F05590035F199 /* CompanyParser.swift */; };
 		214B0E931C1AA6D0001457C1 /* Vacancy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214B0E921C1AA6D0001457C1 /* Vacancy.swift */; };
 		214B0E951C1AA78E001457C1 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214B0E941C1AA78E001457C1 /* Company.swift */; };
 		214B0E981C1AA8F5001457C1 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214B0E971C1AA8F5001457C1 /* DataManager.swift */; };
@@ -39,6 +40,7 @@
 		0555CE591F8977FFAFCA4DA0 /* Pods-hh-jobs-list.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hh-jobs-list.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hh-jobs-list/Pods-hh-jobs-list.debug.xcconfig"; sourceTree = "<group>"; };
 		211CF2D81C1EF0180035F199 /* VacancyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacancyCell.swift; sourceTree = "<group>"; };
 		211CF2DA1C1EF1B40035F199 /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
+		211CF2DC1C1F05590035F199 /* CompanyParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyParser.swift; sourceTree = "<group>"; };
 		214B0E921C1AA6D0001457C1 /* Vacancy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vacancy.swift; sourceTree = "<group>"; };
 		214B0E941C1AA78E001457C1 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		214B0E971C1AA8F5001457C1 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -150,15 +152,16 @@
 			name = NetworkLayer;
 			sourceTree = "<group>";
 		};
-		21B4E8D31C1AE16300F78333 /* ParseLayer */ = {
+		21B4E8D31C1AE16300F78333 /* ParserLayer */ = {
 			isa = PBXGroup;
 			children = (
 				21B4E8D11C1AE14B00F78333 /* Parser.swift */,
 				21B4E8DA1C1AF37A00F78333 /* ParserProtocols.swift */,
 				21B4E8D41C1AE1B200F78333 /* Entity.swift */,
 				21B4E8D81C1AF0ED00F78333 /* VacanciesParser.swift */,
+				211CF2DC1C1F05590035F199 /* CompanyParser.swift */,
 			);
-			name = ParseLayer;
+			name = ParserLayer;
 			sourceTree = "<group>";
 		};
 		21BA2D3B1C1A9D5700438B05 = {
@@ -187,7 +190,7 @@
 				21B4E8BD1C1AC56B00F78333 /* Storyboards */,
 				21B4E8BC1C1AC55200F78333 /* Support */,
 				21B4E8BB1C1AC53800F78333 /* SupportClasses */,
-				21B4E8D31C1AE16300F78333 /* ParseLayer */,
+				21B4E8D31C1AE16300F78333 /* ParserLayer */,
 				214B0E991C1AB2CA001457C1 /* DataLayer */,
 				21B4E8C81C1AD82200F78333 /* NetworkLayer */,
 				214B0E961C1AA8C3001457C1 /* Model */,
@@ -334,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				211CF2DD1C1F05590035F199 /* CompanyParser.swift in Sources */,
 				21B4E8CE1C1AD8C300F78333 /* NetworkState.swift in Sources */,
 				21B4E8CA1C1AD85F00F78333 /* NetworkProtocols.swift in Sources */,
 				21BA2D4A1C1A9D5700438B05 /* ViewController.swift in Sources */,

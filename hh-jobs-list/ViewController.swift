@@ -10,10 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: IBOutlets
+    @IBOutlet weak var tableView: UITableView!
+    
     // MARK: Public properties
     var records: [Vacancy]? {
         didSet {
             // TODO: Add code to refresh tableView
+            tableView.reloadData()
         }
     }
     
@@ -30,7 +34,7 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return records!.count
+        return records?.count ?? 0
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

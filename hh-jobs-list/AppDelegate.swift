@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // MARK: Dependency injection
         let completion: ([AnyObject]) -> () = { (result: [AnyObject]) in
             let controller = self.window?.rootViewController as! ViewController
-            controller.records = result as! [Vacancy]
+            controller.records = (result as! [Vacancy])
         }
         let entity = Entity(closure: completion, contentType: ContentType.Vacancies)
         entity.refresh()

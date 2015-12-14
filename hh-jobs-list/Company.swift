@@ -12,5 +12,6 @@ import RealmSwift
 class Company: Object {
     dynamic var companyName = ""
     dynamic var companyLogoURL = ""
+    dynamic var companyId = ""
     let vacancies = List<Vacancy>()
 }

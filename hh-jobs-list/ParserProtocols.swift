@@ -23,6 +23,6 @@ protocol Parseable {
 
 protocol Parserable {
     typealias T
-    static func parseEntity(items: JSON, i: Int) -> T
-    static func parse(parser: Parser) -> [T]
+    func parseEntity(items: JSON, i: Int) -> T
+    func parse(parser: Parser) -> [T]
 }

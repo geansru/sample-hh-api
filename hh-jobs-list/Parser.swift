@@ -39,7 +39,7 @@ class Parser {
         }
         var result: [AnyObject]
         switch object.contentType {
-        case .Vacancies: result = VacanciesParser.parse(self)
+        case .Vacancies: result = VacanciesParser.shared.parse(self)
         }
         
         dispatch_async(dispatch_get_main_queue()) {
