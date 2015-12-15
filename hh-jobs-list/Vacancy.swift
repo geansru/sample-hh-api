@@ -13,6 +13,6 @@ class Vacancy: Object {
     dynamic var salary = ""
     dynamic var vacancyName = ""
     dynamic var company: Company?
-    dynamic var vacancyId = 0
+    dynamic var vacancyId = ""
     dynamic var publishedAt = NSDate()
 }

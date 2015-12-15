@@ -15,11 +15,16 @@ final class VacanciesParser: Parserable, Singletonable {
     
     // MARK: Public methods
     func parseEntity(items: JSON, i: Int)-> Vacancy {
-        let vacancy: Vacancy = Vacancy()
+        
         let data = items[i]
+        let vacancyId = data["id"].string!
+        
+        let vacancy: Vacancy = Vacancy()
         vacancy.vacancyName = data["name"].string!
         vacancy.salary = parseSalary(data["salary"])
         vacancy.company = CompanyParser.shared.parse(data)
+        vacancy.vacancyId = vacancyId
+        VacancyManager.shared.create(vacancy)
         return vacancy
     }
     
