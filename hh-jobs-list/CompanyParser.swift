@@ -26,7 +26,7 @@ final class CompanyParser: Singletonable {
             company.companyLogoURL = logo
         }
         company.companyId = companyId
-        Thread.shared.main { DataManager.shared.create(company) }
+        DataManager.shared.create(company)
         return company
     }
 }

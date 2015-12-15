@@ -6,7 +6,7 @@
 //  Copyright © 2015 geans.ru. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 final class CompanyManager: Singletonable, DataSourcesable {
     
@@ -28,18 +28,7 @@ extension CompanyManager: Crudable {
         }
         return nil
     }
-    
-    func backgroundRead(id: String, completion: (Company?)->()) {
-        Thread.shared.background {
-            let results = DataManager.shared.read(Company)
-            if results.count > 0 {
-                let companies = results.filter("companyId = '\(id)'")
-                completion( companies.first as? Company )
-            }
-                completion(nil)
-        }
-    }
-    
+
     func create(model: Company) {
         DataManager.shared.create(model)
     }
@@ -51,5 +40,9 @@ extension CompanyManager: Crudable {
     }
     func drop() {
         DataManager.shared.drop(Company)
+    }
+    
+    func filter(query: String) -> [Company] {
+        return DataManager.shared.read(Company).filter(query).toArray() as! [Company]
     }
 }

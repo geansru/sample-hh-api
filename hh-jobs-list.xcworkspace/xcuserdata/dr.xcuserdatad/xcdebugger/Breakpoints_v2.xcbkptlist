@@ -43,13 +43,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "hh-jobs-list/CompanyParser.swift"
-            timestampString = "471859572.831618"
+            filePath = "hh-jobs-list/UIImageView+DownloadImage.swift"
+            timestampString = "471880818.915113"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "parse(_:)"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "loadCompanyLogo(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

@@ -19,17 +19,19 @@ class VacancyCell: UITableViewCell {
     // MARK: Public fields
     var vacancy: Vacancy? {
         didSet {
-            updateTextOnLabel((vacancy?.salary)!, label: salaryLabel)
-            updateTextOnLabel((vacancy?.company?.companyName)!, label: companyLabel)
-            updateTextOnLabel((vacancy?.vacancyName)!, label: vacancyNameLabel)
-            companyLogoImage.loadImageWithURL(NSURL(string: vacancy!.company!.companyLogoURL)!)
+            Thread.shared.main {
+                self.updateTextOnLabel((self.vacancy?.salary)!, label: self.salaryLabel)
+                self.updateTextOnLabel((self.vacancy?.company?.companyName)!, label: self.companyLabel)
+                self.updateTextOnLabel((self.vacancy?.vacancyName)!, label: self.vacancyNameLabel)
+                self.companyLogoImage.loadLogo(forCompany: self.vacancy!.company!)
+            }
         }
     }
 
     // MARK: Lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        companyLogoImage.image = UIImage()
     }
 
     // MARK: Helper

@@ -65,7 +65,7 @@ final class DataManager: Singletonable, Crudable {
         query(closure)
     }
     
-    private func query(closure: DataManagerClosure) {
+    func query(closure: DataManagerClosure) {
         do {
             try self._db.write {
                 closure(nil)
