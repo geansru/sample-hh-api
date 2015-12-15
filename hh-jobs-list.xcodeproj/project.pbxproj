@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		211595EE1C1FE8AD00176969 /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211595ED1C1FE8AD00176969 /* Thread.swift */; };
 		211CF2D91C1EF0180035F199 /* VacancyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211CF2D81C1EF0180035F199 /* VacancyCell.swift */; };
 		211CF2DB1C1EF1B40035F199 /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211CF2DA1C1EF1B40035F199 /* UIImageView+DownloadImage.swift */; };
 		211CF2DD1C1F05590035F199 /* CompanyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211CF2DC1C1F05590035F199 /* CompanyParser.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		0555CE591F8977FFAFCA4DA0 /* Pods-hh-jobs-list.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hh-jobs-list.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hh-jobs-list/Pods-hh-jobs-list.debug.xcconfig"; sourceTree = "<group>"; };
+		211595ED1C1FE8AD00176969 /* Thread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
 		211CF2D81C1EF0180035F199 /* VacancyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacancyCell.swift; sourceTree = "<group>"; };
 		211CF2DA1C1EF1B40035F199 /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
 		211CF2DC1C1F05590035F199 /* CompanyParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyParser.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				214B0E9A1C1AB38F001457C1 /* Log.swift */,
 				21B4E8C21C1ACBE800F78333 /* Extensions.swift */,
 				211CF2DA1C1EF1B40035F199 /* UIImageView+DownloadImage.swift */,
+				211595ED1C1FE8AD00176969 /* Thread.swift */,
 			);
 			name = SupportClasses;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				21B4E8C31C1ACBE800F78333 /* Extensions.swift in Sources */,
 				211CF2D91C1EF0180035F199 /* VacancyCell.swift in Sources */,
 				21B4E8D21C1AE14B00F78333 /* Parser.swift in Sources */,
+				211595EE1C1FE8AD00176969 /* Thread.swift in Sources */,
 				21B4E8D01C1AD9E400F78333 /* VacanciesNetworkManager.swift in Sources */,
 				21B4E8D91C1AF0ED00F78333 /* VacanciesParser.swift in Sources */,
 				214B0E9B1C1AB38F001457C1 /* Log.swift in Sources */,

@@ -22,6 +22,7 @@ protocol Crudable {
     func create(model: T)
     func update(model: T)
     func delete(model: T)
+    func read(id: String) -> T?
 }
 
 protocol Dropable {

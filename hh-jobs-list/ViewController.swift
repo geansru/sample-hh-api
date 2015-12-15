@@ -24,7 +24,8 @@ class ViewController: UIViewController {
     // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        tableView.estimatedRowHeight = 240
+        tableView.rowHeight = UITableViewAutomaticDimension
     }
 }
 

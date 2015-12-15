@@ -9,14 +9,11 @@
 import Foundation
 
 class Parser {
-    private let queueName = "ru.geans.ios.Parser.bgqueue"
-    let backgroundQueue: dispatch_queue_t!
     var delegate: ParserDelegate?
     var object: Parseable
     
     init(object: Parseable) {
         self.object = object
-        backgroundQueue = dispatch_queue_create(queueName, nil)
     }
     
     convenience init(object: Parseable, delegate: ParserDelegate) {
@@ -25,24 +22,45 @@ class Parser {
         parse()
     }
     
-    // MARK: Main parse function
+    // MARK: Synchronous/Asynchronous parse function
     func parse() {
-        dispatch_async(backgroundQueue) {
-            self.parseAsync()
+        parse(true)
+    }
+    
+    func parse(isSync: Bool) {
+        if isSync {
+            parseSync()
+        } else {
+            parseAsyncWrapper()
         }
     }
     
-    // MARK: Parse func body
+    // MARK: Main parse functions
+    private func parseSync() {
+        self.delegate?.parserWillStartParse(self)
+        var result: [AnyObject]
+        switch self.object.contentType {
+        case .Vacancies:
+            result = VacanciesParser.shared.parse(self)
+        }
+        self.delegate?.parserDidFinishParse(self, result: result)
+    }
+    
+    private func parseAsyncWrapper() {
+        Thread.shared.background { self.parseAsync() }
+    }
+    
     private func parseAsync() {
-        dispatch_async(dispatch_get_main_queue()) {
+        Thread.shared.main {
             self.delegate?.parserWillStartParse(self)
         }
         var result: [AnyObject]
-        switch object.contentType {
-        case .Vacancies: result = VacanciesParser.shared.parse(self)
+        switch self.object.contentType {
+        case .Vacancies:
+            result = VacanciesParser.shared.parse(self)
         }
         
-        dispatch_async(dispatch_get_main_queue()) {
+        Thread.shared.main {
             self.delegate?.parserDidFinishParse(self, result: result)
         }
     }

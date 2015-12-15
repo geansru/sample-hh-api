@@ -16,10 +16,17 @@ final class CompanyParser: Singletonable {
     // MARK: Public methods
     func parse(data: JSON) -> Company {
         let employer = data["employer"]
+        let companyId = employer["id"].string ?? ""
+        if let company = CompanyManager.shared.read(companyId) {
+            return company
+        }
         let company: Company = Company()
         company.companyName = employer["name"].string!
-        company.companyLogoURL = employer["logo_urls"]["240"].string!
-        company.companyId = employer["id"].string!
+        if let logo = employer["logo_urls"]["240"].string {
+            company.companyLogoURL = logo
+        }
+        company.companyId = companyId
+        Thread.shared.main { DataManager.shared.create(company) }
         return company
     }
 }

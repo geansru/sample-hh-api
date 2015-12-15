@@ -21,6 +21,11 @@ final class DataManager: Singletonable, Crudable {
     static var shared: DataManager = DataManager()
     
     // MARK: Public Methods
+    // FIXME: Remove this stub. Some how)
+    func read(id: String) -> Object? {
+        return nil
+    }
+    
     func read(type: Object.Type) ->  Results<Object>{
         return _db.objects(type)
     }

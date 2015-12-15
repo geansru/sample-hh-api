@@ -20,6 +20,11 @@ final class VacancyManager: Singletonable, DataSourcesable {
 }
 
 extension VacancyManager: Crudable {
+    func read(id: String) -> Vacancy? {
+        let results = DataManager.shared.read(Vacancy).filter("vacancyId = \(id)")
+        return results.first as? Vacancy
+    }
+    
     func create(model: Vacancy) {
         DataManager.shared.create(model)
     }

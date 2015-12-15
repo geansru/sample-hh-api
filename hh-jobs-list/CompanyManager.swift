@@ -20,6 +20,26 @@ final class CompanyManager: Singletonable, DataSourcesable {
 }
 
 extension CompanyManager: Crudable {
+    func read(id: String) -> Company? {
+        let results = DataManager.shared.read(Company)
+        if results.count > 0 {
+            let companies = results.filter("companyId = '\(id)'")
+            return companies.first as? Company
+        }
+        return nil
+    }
+    
+    func backgroundRead(id: String, completion: (Company?)->()) {
+        Thread.shared.background {
+            let results = DataManager.shared.read(Company)
+            if results.count > 0 {
+                let companies = results.filter("companyId = '\(id)'")
+                completion( companies.first as? Company )
+            }
+                completion(nil)
+        }
+    }
+    
     func create(model: Company) {
         DataManager.shared.create(model)
     }
