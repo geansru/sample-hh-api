@@ -24,8 +24,6 @@ class ViewController: UIViewController {
     // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-//        tableView.estimatedRowHeight = 240
-//        tableView.rowHeight = UITableViewAutomaticDimension
         tableView.delegate = self
     }
 }
@@ -49,6 +47,7 @@ extension ViewController: UITableViewDataSource {
 
 extension ViewController: UITableViewDelegate {
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return records![indexPath.row].company?.logoHeight ?? 120
+        let height = records![indexPath.row].company?.logoHeight ?? 80
+        return height < 80 ? 80 : height
     }
 }
